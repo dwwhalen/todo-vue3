@@ -1,15 +1,15 @@
 <template>
-	<h1>ToDo App</h1>
+	<h1>Let's do some thangs!</h1>
 	<form @submit.prevent="addTodo()">
-		<label>New ToDo </label>
+		<label>New To-Do </label>
 		<input
 			v-model="newTodo"
 			name="newTodo"
 			autocomplete="off"
 		>
-		<button>Add ToDo</button>
+		<button>Add To-Do</button>
 	</form>
-	<h2>ToDo List</h2>
+	<h2>To-Do List</h2>
 	<ul>
 		<li
 			v-for="(todo, index) in todos"
@@ -25,7 +25,7 @@
 	<h4 v-if="todos.length === 0">Empty list.</h4>
 </template>
 
-<script>
+<script lang="ts">
 	import { ref } from 'vue';
 	export default {
 		name: 'App',
