@@ -6,6 +6,7 @@
 			v-model="newTodo"
 			name="newTodo"
 			autocomplete="off"
+			data-testid="new-todo"
 		>
 		<button>Add To-Do</button>
 	</form>
