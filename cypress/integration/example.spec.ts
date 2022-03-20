@@ -5,7 +5,7 @@ describe("Adding a Todo", () => {
     cy.visit("/");
   });
 
-  it.only('my new recorded test is fresh', function () {
+  it('my new recorded test is fresh', function () {
     cy.eyesOpen({
       appName: 'Demo App',
       testName: 'Adding a Todo',
