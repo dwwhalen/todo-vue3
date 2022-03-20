@@ -54,7 +54,7 @@ jobs:
         uses: cypress-io/github-action@v2
         timeout-minutes: 10
         with:
-          record: true
+          record: false
           start: npm run preview
           wait-on: "http://localhost:5050"
           browser: chrome
@@ -84,7 +84,7 @@ jobs:
         uses: cypress-io/github-action@v2
         timeout-minutes: 10
         with:
-          record: true
+          record: false
           start: npm run preview
           wait-on: "http://localhost:5050"
           browser: firefox
