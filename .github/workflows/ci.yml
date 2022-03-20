@@ -56,7 +56,7 @@ jobs:
         with:
           record: true
           start: npm run preview
-          wait-on: "http://localhost:3000"
+          wait-on: "http://localhost:5050"
           browser: chrome
           group: "UI - Chrome"
         env:
@@ -86,7 +86,7 @@ jobs:
         with:
           record: true
           start: npm run preview
-          wait-on: "http://localhost:3000"
+          wait-on: "http://localhost:5050"
           browser: firefox
           group: "UI - Firefox"
         env:
