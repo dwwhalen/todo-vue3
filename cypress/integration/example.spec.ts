@@ -5,18 +5,22 @@ describe("My First Test", () => {
     cy.visit("/");
   });
 
-  /* ==== Test Created with Cypress Studio ==== */
-  it('my new recorded test is fresh', function() {
-    /* ==== Generated with Cypress Studio ==== */
+  it('my new recorded test is fresh', function () {
     cy.visit('/');
-    cy.get('input').clear();
-    cy.get('input').type('Cut the grass');
-    cy.get('form > button').click();
-    cy.get(':nth-child(1) > span').click();
-    cy.get('.done').click();
-    cy.get('#app').click();
-    cy.get(':nth-child(2) > span').should('have.text', 'Cut the grass');
-    cy.get('h1').should('have.text', 'Let\'s do some thangs!');
-    /* ==== End Cypress Studio ==== */
+
+    cy.get("[data-test-id='page-title']")
+      .should('have.text', 'Let\'s do some thangs!');
+
+    cy.get("[data-test-id='new-todo']")
+      .clear();
+
+    cy.get("[data-test-id='new-todo']")
+      .type('Cut the grass');
+
+    cy.get("[data-test-id='add-button']")
+      .click();
+
+    cy.get("[data-test-id='todo-item']").last()
+      .should('have.text', 'Cut the grass');
   });
 });

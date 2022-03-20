@@ -1,14 +1,14 @@
 <template>
-	<h1>Let's do some thangs!</h1>
+	<h1 data-test-id="page-title">Let's do some thangs!</h1>
 	<form @submit.prevent="addTodo()">
 		<label>New To-Do </label>
 		<input
 			v-model="newTodo"
 			name="newTodo"
 			autocomplete="off"
-			data-testid="new-todo"
+			data-test-id="new-todo"
 		>
-		<button>Add To-Do</button>
+		<button data-test-id="add-button">Add To-Do</button>
 	</form>
 	<h2>To-Do List</h2>
 	<ul>
@@ -19,6 +19,7 @@
 			<span
 				:class="{ done: todo.done }"
 				@click="doneTodo(todo)"
+				data-test-id="todo-item"
 			>{{ todo.content }}</span>
 			<button @click="removeTodo(index)">Remove</button>
 		</li>
