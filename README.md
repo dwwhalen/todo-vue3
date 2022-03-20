@@ -2,6 +2,10 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
+[Getting Started with Applitools(https://applitools.com/tutorials/cypress.html#getting-started-with-applitools)
+
+Be sure to set the APPLITOOLS_API_KEY environment variable before runing the test:  `export APPLITOOLS_API_KEY='your_key'`
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
