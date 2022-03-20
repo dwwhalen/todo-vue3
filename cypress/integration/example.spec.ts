@@ -8,7 +8,7 @@ describe("My First Test", () => {
   /* ==== Test Created with Cypress Studio ==== */
   it('my new recorded test is fresh', function() {
     /* ==== Generated with Cypress Studio ==== */
-    cy.visit('http://localhost:3000/');
+    cy.visit('/');
     cy.get('input').clear();
     cy.get('input').type('Cut the grass');
     cy.get('form > button').click();
